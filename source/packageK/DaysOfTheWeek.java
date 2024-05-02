@@ -1,4 +1,4 @@
-package source;
+package source.packageK;
 
 public enum DaysOfTheWeek {
     SUNDAY(1,"Resting"),MONDAY(2,"ahhh"),TUESDAY(3,"getting in groove"),

@@ -1,11 +1,55 @@
-package source;
+package source.packageK;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
+public class Employee implements Comparable<Employee> {
+    private double salary;
+    private String name;
+
+    public Employee(String n,double s){
+        this.salary=s;
+        this.name=n;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * Compares employees by salary
+     * @param other another Employee object
+     * @return a negative value if this employee has a lower salary than
+     * otherObject, 0 if the salaries are the same, a positive value otherwise
+   */
+    public int compareTo(Employee E){
+        //make sure the two classes compared are Employees
+        if(getClass()!=E.getClass()){
+            throw new ClassCastException();
+        }
+        return Double.compare(getSalary(), E.getSalary());
+
+    }
+    
+}
 
 
-public class EmployeeExample {
+
+
+ class EmployeeExample {
     public EmployeeExample(){
 
     }

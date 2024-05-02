@@ -1,4 +1,4 @@
-package source;
+package source.packageK;
 
 public interface PoweredInterface {
     //interfaces can have static final constants

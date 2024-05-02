@@ -28,6 +28,7 @@ public class UnitTestingTest {
     //never test multiple scenarios in one test method...one scenario per test method.
     UnitTesting ut=new UnitTesting();
     assertTrue(ut.printSum(2,3)==9);
+    
    }
     
    @Test

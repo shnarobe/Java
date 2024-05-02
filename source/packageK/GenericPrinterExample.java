@@ -1,4 +1,4 @@
-package source;
+package source.packageK;
 
 public class GenericPrinterExample {
     public static void main(String [] args){

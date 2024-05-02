@@ -1,4 +1,4 @@
-package source;
+package source.packageK;
 //public class GenericPrinter <T extends Employee> { is an example of a bounded generic
 public class GenericPrinter <T> {
 
@@ -18,7 +18,7 @@ public class GenericPrinter <T> {
     }
 
     
-    public <T> T getThingToPrint(){
+    public T getThingToPrint(){
         return thingToPrint;
     }
 
